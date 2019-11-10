@@ -1,0 +1,4 @@
+rootProject.name = 'algo'
+
+include 'lection1'
+include 'lection2'

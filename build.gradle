@@ -1,0 +1,29 @@
+subprojects {
+
+    apply plugin: 'java'
+
+    compileJava {
+        sourceCompatibility = 11
+        targetCompatibility = 11
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+//        compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.29'
+//        compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+//        annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    }
+}
+
+project(':lection2') {
+    dependencies {
+        compile group: 'org.springframework', name: 'spring-context', version: '4.3.7.RELEASE'
+        compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.29'
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+        annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    }
+}
