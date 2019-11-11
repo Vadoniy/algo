@@ -9,7 +9,6 @@ public class FactorsConfig {
 
     @Bean(name = "factors")
     public FactorsFinder factorsFinder() {
-
         return new FactorsFinder();
     }
 }
